@@ -9,3 +9,11 @@ tareas.forEach(function(el){
   miUl.appendChild(liAux);
 });
 
+function addTask(){
+	var miInput = document.getElementById("task").value;
+	var liAux = document.createElement("li");
+	var textAux = document.createTextNode(miInput);
+	liAux.appendChild(textAux); 
+  miUl.appendChild(liAux);
+  document.getElementById("task").value = "";
+}
